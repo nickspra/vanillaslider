@@ -1,0 +1,88 @@
+/*******************************************
+**			HUBSLIDER
+*******************************************/
+#hub-slider-container{
+	width:100%;
+	height:auto;
+	position:relative;
+	overflow:hidden;
+	background:#ffffff;
+}
+
+#hub-slider-viewport{
+	position:relative;
+	height:100%;
+	width:100%;
+	margin:0 auto;
+}
+#hub-slider{position:relative;width:100%;overflow:hidden;}
+#hub-slider ul{padding:0;margin:0;}
+.hub-slider-arrow{
+	position:absolute;
+	cursor:pointer;
+	top:50%;
+	width: 83px;
+	height: 115px;
+	background: #ffffff;
+	border: solid 1px #d7d7d7;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	-webkit-transition: background 0.25s ease-in-out;
+	-moz-transition: background 0.25s ease-in-out;
+	-ms-transition: background 0.25s ease-in-out;
+	-o-transition: background 0.25s ease-in-out;
+	transition: background 0.25s ease-in-out;
+
+	-webkit-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%);
+}
+.hub-slider-arrow:hover{
+	background: #f4f4f4;
+}
+.hub-slider-arrow:hover#hub-slider-prev:after{
+	margin-left: -24px;
+}
+.hub-slider-arrow:hover#hub-slider-next:after{
+	margin-left: -4px;
+}
+#hub-slider-prev{
+	left:-1px;
+}
+#hub-slider-next{
+	right:-1px;
+}
+#hub-slider-prev:after,
+#hub-slider-next:after{
+	content: "";
+	width: 22px;
+	height: 42px;
+	top: 50%;
+    margin-top: -21px;
+    z-index: 9999;
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -14px;
+    -webkit-transition: margin-left 0.25s ease-in-out;
+	-moz-transition: margin-left 0.25s ease-in-out;
+	-ms-transition: margin-left 0.25s ease-in-out;
+	-o-transition: margin-left 0.25s ease-in-out;
+	transition: margin-left 0.25s ease-in-out;
+}
+#hub-slider-prev:after{
+	background: url(images/testimonial-leftarrow2x.png);
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/testimonial-leftarrow2x.png', sizingMethod='scale');
+	-ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/testimonial-leftarrow2x.png', sizingMethod='scale');
+}
+#hub-slider-next:after{
+	background: url(images/testimonial-rightarrow2x.png);
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/testimonial-rightarrow2x.png', sizingMethod='scale');
+	-ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/testimonial-rightarrow2x.png', sizingMethod='scale');" 
+}
+
+#hub-slider-dots{display:none;}
